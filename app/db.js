@@ -4,15 +4,15 @@ const movies = [];
 
 const getAllMovies = () => movies;
 
-const getMovie = ({ id }) => {
-  const idx = movies.findIndex((m) => m.id == id);
-  if (idx === -1) {
-    return null;
-  }
+// const getMovie = ({ id }) => {
+//   const idx = movies.findIndex((m) => m.id == id);
+//   if (idx === -1) {
+//     return null;
+//   }
 
-  const movie = movies[idx];
-  return movie;
-};
+//   const movie = movies[idx];
+//   return movie;
+// };
 
 const addMovie = ({ title, year }) => {
   const id = uuidv4();
